@@ -27,7 +27,7 @@ num_to_string = ['ноль', 'один', 'два', 'три', 'четыре', 'п
 with open('111111.txt', 'rt') as a:               # открытие файла
     while True:                                   # начало работы цикла
         inp = a.read(1)                           # считывание 1 символа
-        if not inp:
+        if not inp:                               # если файл пустой
             break
         if inp not in nums and inp not in ignor:  # если не число
             buffer = []                           # очистка рабочего буфера
